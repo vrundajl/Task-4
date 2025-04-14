@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html ,body{
+    height: 100%;
+    width: 100%;
+    /* color: aliceblue; */
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.nav{
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 0 5vw;
+    /* border-bottom: 1px solid #050505; */
+}
+.nav2{
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+    cursor: pointer;
+}
+.nav h2{
+    font-size: 2vw;
+    font-weight: 700;
+    padding-left: 1vw;
+}
+.nav h4{
+    font-size: 1.5vw;
+}
+.nav button{
+    font-size: 1.5vw;
+    padding: 2vw 3vw;
+    background-color: rgb(197, 227, 246);
+    color: rgb(21, 147, 244);
+    border-radius: 15px;
+    border: none;
+    font-weight: 600;
+}
+.nav i{
+    font-size: 1.6vw;
+    font-weight: 900;
+    display: none;
+}
+.content{
+    height: calc(100% - 90px);
+    width: 100%;
+    background-color: rgb(246, 246, 246);
+    display: flex;
+    position: relative;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+.left{
+    height: 100%;
+    width: 50%;
+    /* background: linear-gradient(to left, #000000fa, #4b0909); */
+    padding: 5vw 4vw;
+}
+.left h1{
+    font-size: 4.2vw;
+    line-height: 4.4vw;
+    line-height: 5vw;
+}
+#blue{
+    color: rgb(21, 147, 224);
+}
+
+.left p{
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #96a8b0;
+    width: 80%;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+}
+.content button{
+    font-size: 1.5vw;
+    padding: 2vw 3vw;
+    background-color: rgb(21, 147, 224) ;
+    color:  rgb(232, 244, 251);
+    border-radius: 10px;
+    border: none;
+    font-weight: 900;
+}
+.right{
+    height: 100%;
+    width: 50%;
+    /* background: linear-gradient(to right, #20015efa, #8953e6); */
+}
+.right img{
+    height: 85%;
+    width: 80%;
+}
+
+@media (max-width: 800px) {
+    .nav{
+        height: 100px;
+    }
+   
+    .nav h2{
+        font-size: 4vw;
+        font-weight: 700;
+        padding-left: 1vw;
+    }
+    .nav2{
+        font-size: 10vw;
+        display: flex;
+        gap: 3vw;
+        align-items: center;
+        cursor: pointer;
+    }
+    .nav2 h4{
+        font-size: 2.5vw;
+    }
+    .nav button{
+        font-size: 2.7vw;
+        padding: 2vw 3vw;
+        background-color: rgb(197, 227, 246);
+        color: rgb(21, 147, 244);
+        border-radius: 15px;
+        border: none;
+        font-weight: 600;
+    }
+    .left h1{
+        font-size: 4.2vw;
+        line-height: 4.4vw;
+        line-height: 4vw;
+    }
+    .left p{
+        font-size: 2.2vw;
+    }
+    .content button{
+        font-size: 2vw;
+    }
+    .right img{
+        height: 50%;
+        width: 80%;
+    }    
+}
+
+
+
+
+@media (max-width: 400px) {
+    .nav{
+        padding: 0 5vw;
+        height: 60px;
+    }
+    .nav h2{
+        font-size: 5.1vw;
+    }
+    .nav h4{
+        font-size: 4vw;
+        display: none;
+    }
+    .nav button{
+        font-size: 4vw;
+        border-radius: 8px;
+        }
+    .content{
+        height: calc(100% - 60px);
+        flex-direction: column;
+    }
+    .left{
+       width: 100%;
+       height: 45%;
+       padding: 4vw 6vw;
+    }
+    .left h1{
+        font-size: 10vw;
+        line-height: 10vw;
+    }
+    .left p{
+        font-size: 3vw;
+        width: 90%;
+        margin-top: 1vw;
+    }
+    .content button{
+        padding: 4vw 7vw;
+        font-size: 4vw;
+        border-radius: 15px;
+        font-weight: 600;
+    }
+    .right{
+        width: 100%;
+        height: 85%;
+    }
+    .right img{
+        margin-top: 2vh;
+        height: 70%;
+    }
+}
